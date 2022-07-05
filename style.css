@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'arial';
+    background: #8a8a8a;
+}
+.contenedor{
+    padding: 30px 0px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: visible;
+    height: 520px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.titulo{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.title-final{
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+header{
+    width: 100%;
+    height: 1050px;
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(40, 34%, 68%, 0.233), hsla(180, 12%, 29%, 0.487)),url("../imagen/Cover-Video-.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 50px 50px 0 50px;
+}
+nav>img{
+    width: 200px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+nav> a{
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 40px;
+}
+nav> a:hover{
+    text-decoration: underline;
+    color: red;
+}
+header .textos-header{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.textos-header h1{
+    font-size: 80px;
+    color: #fff;
+}
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+}
+.wave{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor-sobre-la-tienda{
+    display: flex;
+}
+
+/********     SOBRE NOSOTROS */
+
+
+.contenedor-sobre-nosotros{
+    background: #828080;
+}
+.contenedor1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.container{
+    width: 300px;
+}
+.container.card {
+    justify-content: space-around;
+}
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.4s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background:url();
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.container .card:hover .face.face1{
+    box-shadow: 
+    inset 0 0 60px #fff,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+    transform: translateY(0px);
+}
+
+.container.card .face.face1 .content{
+    opacity: 0.2;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1.content i{
+    font-size: 3em;
+    color: #fff;
+    display:inline-block;
+}
+
+.container.card .face.face1 .content h3{
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.container.card .face.face1 .content a{
+ transition: 0.5s; 
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: rgb(195, 194, 194);
+    dispLay: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0px);
+}
+
+.container .card .face.face2 .content p, a{
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   color: #333;
+}
+
+.container .card .face.face2 .content  a{
+   text-decoration: none;
+   color: #fff;
+   box-sizing: border-box;
+   padding: 10px 24px;
+   margin: 15px 0 0;
+   display: inline-block;
+   background: #444;
+ }
+
+/*****  FIN ******/
+
+.portafolio{
+    font-family: 'Courier New', Courier, monospace;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port > img{
+    padding-bottom: 60px;
+    width: 100%;
+    height: 420px;
+}
+.contenedor-sobre-nosotros{
+    background: #ffffff;
+    display: flex;
+}
+.car{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 300px;
+    justify-content: space-around;
+    line-height: 300%;
+}
+.cards.card{
+    align-items: center;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    background: #3E5151;
+    padding: 30px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
